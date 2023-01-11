@@ -1,0 +1,102 @@
+{
+    "me": {
+        "name": "karl jakelski",
+        "about": "Karl is a Canadian born world traveller and programmer. This website is a basic record of his finished and not-so-finished projects, whether they be personal or professional. Any feedback is always apreciated.\nMemento mori. Amor fati."
+    },
+    "projects": [
+        {
+            "name":"John Stephens Antiques App",
+            "status": "ongoing",
+            "startDate": "July 2022",
+            "description": "React native catalogue app for ios and android for a New Zealand based European Antiques buisness.",
+            "links": [
+                {
+                    "name": "github",
+                    "url": ""
+                },
+                {
+                    "name": "playstore",
+                    "url": ""
+                },
+                {
+                    "name": "apple store",
+                    "url": ""
+                }
+            ],
+            "skills": [
+                {
+                    "name": "react native",
+                    "url": "https://reactnative.dev/"
+                },
+                {
+                    "name": "ios",
+                    "url": "https://en.wikipedia.org/wiki/IOS"
+                },
+                {
+                    "name": "android",
+                    "url": "https://en.wikipedia.org/wiki/Android_(operating_system)"
+                }
+            ]
+        },
+        {
+            "name":"Taeyls Blog",
+            "status": "complete",
+            "startDate": "2022",
+            "description": "Personal website and blog for creative writing and pop-culture reviews.",
+            "links": [
+                {
+                    "name": "github",
+                    "url": ""
+                },
+                {
+                    "name": "website",
+                    "url": ""
+                }
+            ],
+            "skills": [
+                {
+                    "name": "front-end",
+                    "url": "https://en.wikipedia.org/wiki/Front-end_web_development"
+                },
+                {
+                    "name": "javascript",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                },
+                {
+                    "name": "html",
+                    "url": "https://en.wikipedia.org/wiki/HTML"
+                },
+                {
+                    "name": "css",
+                    "url": "https://en.wikipedia.org/wiki/CSS"
+                }
+            ]
+        },
+        {
+            "name":"Grains of Gold",
+            "startDate": "2022",
+            "status": "ongoing",
+            "description": "Stardew Valley inspired farming game with an alchemical twist.",
+            "links": [
+                {
+                    "name": "github",
+                    "url": ""
+                }
+            ],
+            "skills": [
+                {
+                    "name": "c++",
+                    "url": "https://en.wikipedia.org/wiki/C++"
+                },
+                {
+                    "name": "sdl2",
+                    "url": "https://www.libsdl.org/"
+                },
+                {
+                    "name": "aseprite",
+                    "url": "https://www.aseprite.org/"
+                }
+            ]
+        }
+    ]
+}
