@@ -13,8 +13,8 @@ const AboutMe: FunctionComponent<MeProps> = ({ me }) => {
   return (
     <div className='header' onClick={() => { setOpen(!open) }}>
       <h1 className='header-title'>{me.name}</h1>
+      <h1>(karl.jakelski@gmail.com)</h1>
       <h1 className='header-subtitle'>and his works</h1>
-      <h1>karl.jakelski@gmail.com</h1>
       {open &&
         <>
           <p className='header-subtitle'>{me.about}</p>
@@ -34,19 +34,21 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
   return (
     <div className='project'>
       <div className='project-header'>
-        <div onClick={() => { setOpen(!open) }}>
-          <h2 className='project-title' >{project.name + ' - ' + project.startDate}</h2>
-          <h2 className={'project-status ' + (project.status === 'ongoing' ? 'ongoing' : 'complete')}>{project.status}</h2>
-        </div>
+        <h2 className='project-title'>{project.name + ' - ' + project.startDate}</h2>
+        <h2 className={'project-status ' + (project.status === 'ongoing' ? 'ongoing' : 'complete')}>{project.status}</h2>
         <div className='skill-list'>
           {project.skills.map(skill => <a className="skill" href={skill.url} key={skill.name}>{skill.name}</a>)}
         </div>
       </div>
+      <button className='reveal-button' onClick={() => { setOpen(!open) }}>{open ? 'less' : 'more'}</button>
+
 
       {open &&
-        <div>
+        <div className='description-container'>
           <p className='project-description'>{project.description}</p>
+          <div className='project-link-list'>
           {project.links.map(link => <a className='project-link' href={link.url} key={link.name}>{link.name}</a>)}
+          </div>
         </div>
       }
     </div>

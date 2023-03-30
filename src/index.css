@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply mx-auto md:w-5/6 lg:w-2/5  xl:w-1/2;
+    @apply mx-5;
     @apply bg-slate-900 text-white;
   }
 
@@ -15,26 +15,26 @@
   .header-title {
     @apply mx-auto text-2xl ;
   }
-
+s
   .header-subtitle {
     @apply mx-auto w-96 whitespace-pre-line;
   }
 
   .project {
-    @apply p-2 m-2;
+    @apply block p-2 m-2;
     @apply border-slate-800	 border-2 rounded-lg;
   }
 
   .project-header {
-    @apply flex justify-between;
+    @apply block justify-between;
   }
 
   .project-title {
-    @apply inline-block cursor-pointer;
+    @apply mr-3 inline-block;
   }
 
   .project-status {
-    @apply m-2 p-1 inline cursor-pointer;
+    @apply mr-2 p-0.5 inline-block;
     @apply border-slate-600 border-2 rounded-lg;
   }
 
@@ -47,21 +47,37 @@
     @apply bg-green-900;
   }
 
+  .reveal-button {
+    @apply mb-1 mx-auto block;
+    @apply underline;
+  }
+
+  .description-container {
+    @apply transition-opacity;
+  }
+
   .project-description {
-    @apply my-3;
+    @apply mb-3;
+  }
+
+  .project-link-list {
+    @apply block;
   }
 
   .project-link {
-    @apply my-3 mr-2 p-1 inline;
+    @apply mt-1 mr-1 p-1 inline-block;
     @apply bg-blue-800 border-slate-600 border-2 rounded-lg;
+
+    @apply hover:bg-blue-700 hover:border-slate-500;
+    @apply focus:bg-blue-600 focus:border-slate-400;
   }
 
   .skill-list {
-    @apply inline-block;
+    @apply inline-block my-2;
   }
 
   .skill {
-    @apply m-2 p-1 inline;
+    @apply mr-1 mb-1 p-1 inline-block;
     @apply bg-slate-800 border-slate-600 border-2 rounded-lg;
     
     @apply hover:bg-slate-600 hover:border-slate-500;
