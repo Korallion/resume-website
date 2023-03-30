@@ -5,6 +5,7 @@
 @layer components {
   body {
     @apply mx-5;
+    @apply sm:w-96 sm:m-auto;
     @apply bg-slate-900 text-white;
   }
 
