@@ -13,12 +13,12 @@ const AboutMe: FunctionComponent<MeProps> = ({ me }) => {
   return (
     <div className='header' onClick={() => { setOpen(!open) }}>
       <h1 className='header-title'>{me.name}</h1>
-      <h1>(karl.jakelski@gmail.com)</h1>
+      <h1 className='text-sm'>(karl.jakelski@gmail.com)</h1>
       <h1 className='header-subtitle'>and his works</h1>
       {open &&
-        <>
-          <p className='header-subtitle'>{me.about}</p>
-        </>
+        <div className='w-auto mx-auto'>
+          <p className='header-subtitle text-justify'>{me.about}</p>
+        </div>
       }
     </div>
   );

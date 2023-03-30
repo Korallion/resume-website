@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply mx-5;
+    @apply mx-5 pt-5;
     @apply sm:w-96 sm:m-auto;
     @apply bg-slate-900 text-white;
   }
@@ -16,9 +16,10 @@
   .header-title {
     @apply mx-auto text-2xl ;
   }
-s
+  
   .header-subtitle {
-    @apply mx-auto w-96 whitespace-pre-line;
+    @apply mx-auto px-4 whitespace-pre-line;
+    @apply text-sm;
   }
 
   .project {
