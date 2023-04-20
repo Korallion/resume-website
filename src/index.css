@@ -16,15 +16,21 @@
   .header-title {
     @apply mx-auto text-2xl ;
   }
+
+  .subtitle-container {
+    @apply hidden group-focus:block w-auto mx-auto;
+  }
   
   .header-subtitle {
     @apply mx-auto px-4 whitespace-pre-line;
-    @apply text-sm;
+    @apply text-sm ;
   }
 
   .project {
-    @apply block p-2 m-2;
+    @apply transition-all;
+    @apply block p-2 m-2 cursor-pointer;
     @apply border-slate-800	 border-2 rounded-lg;
+    @apply hover:border-slate-600 hover:scale-105 hover:py-4;
   }
 
   .project-header {
@@ -37,11 +43,11 @@
 
   .project-status {
     @apply mr-2 p-0.5 inline-block;
-    @apply border-slate-600 border-2 rounded-lg;
+    @apply border-slate-500 border-2 rounded-lg;
   }
 
   .ongoing {
-    @apply bg-fuchsia-900;
+    @apply bg-indigo-900;
 
   }
 
@@ -50,12 +56,13 @@
   }
 
   .reveal-button {
-    @apply mb-1 mx-auto block;
-    @apply underline;
+    @apply bg-blue-800;
+    @apply mb-1 mx-auto px-2 block;
+    @apply border-2 rounded-lg border-slate-600;
   }
 
   .description-container {
-    @apply transition-opacity;
+    @apply block;
   }
 
   .project-description {

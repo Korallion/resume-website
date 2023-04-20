@@ -8,19 +8,15 @@
             "name":"JS & Co. App",
             "status": "ongoing",
             "startDate": "July 2022",
-            "description": "React native catalogue ios and adroid apps for a New Zealand based European Antiques buisness.",
+            "description": "React native ios and adroid catalogue applications for a New Zealand based European Antiques buisness.",
             "links": [
-                {
-                    "name": "github",
-                    "url": ""
-                },
                 {
                     "name": "playstore",
                     "url": ""
                 },
                 {
                     "name": "apple store",
-                    "url": ""
+                    "url": "https://apps.apple.com/nz/app/john-stephens-co/id1660713362"
                 }
             ],
             "skills": [
@@ -46,11 +42,11 @@
             "links": [
                 {
                     "name": "github",
-                    "url": ""
+                    "url": "https://github.com/Korallion/taeyls-blog-project"
                 },
                 {
                     "name": "website",
-                    "url": ""
+                    "url": "https://www.taeyls.com/"
                 }
             ],
             "skills": [
@@ -80,7 +76,7 @@
             "links": [
                 {
                     "name": "github",
-                    "url": ""
+                    "url": "https://github.com/Korallion/Grains-of-Gold"
                 }
             ],
             "skills": [

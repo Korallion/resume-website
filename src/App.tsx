@@ -40,7 +40,7 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
           {project.skills.map(skill => <a className="skill" href={skill.url} key={skill.name}>{skill.name}</a>)}
         </div>
       </div>
-      <button className='reveal-button' onClick={() => { setOpen(!open) }}>{open ? 'less' : 'more'}</button>
+      <button className='reveal-button' onClick={() => { setOpen(!open) }}>{open ? 'less ▲' : 'more ▼'}</button>
 
 
       {open &&
