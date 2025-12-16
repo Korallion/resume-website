@@ -11,7 +11,7 @@
 
   .header {
     @apply text-center cursor-pointer m-2;
-    @apply hover:text-blue-600;
+    @apply hover:text-blue-600 hover:scale-105;
   }
 
   .header-title {
@@ -28,10 +28,11 @@
   }
 
   .project {
+    @apply w-auto;
     @apply transition-all;
     @apply block p-2 m-2 cursor-pointer;
     @apply border-slate-800	 border-2 rounded-lg;
-    @apply hover:border-slate-600 hover:scale-105 hover:py-4;
+    @apply hover:border-blue-600 hover:scale-110;
   }
 
   .project-header {
@@ -49,7 +50,6 @@
 
   .ongoing {
     @apply bg-indigo-900;
-
   }
 
   .complete {
