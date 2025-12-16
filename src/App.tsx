@@ -13,7 +13,7 @@ const AboutMe: FunctionComponent<MeProps> = ({ me }) => {
   return (
     <div className='header' onClick={() => { setOpen(!open) }}>
       <h1 className='header-title'>{me.name}</h1>
-      <h1 className='text-sm'>(karl.jakelski@gmail.com)</h1>
+      <h1 className='text-sm'>karl.jakelski@gmail.com</h1>
       <h1 className='header-subtitle'>and his works</h1>
       {open &&
         <div className='w-auto mx-auto'>
@@ -37,7 +37,7 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
         <h2 className='project-title'>{project.name + ' - ' + project.startDate}</h2>
         <h2 className={'project-status ' + (project.status === 'ongoing' ? 'ongoing' : 'complete')}>{project.status}</h2>
         <div className='skill-list'>
-          {project.skills.map(skill => <a className="skill" href={skill.url} key={skill.name}>{skill.name}</a>)}
+          {project.skills.map(skill => <a className="skill" target="_blank" href={skill.url} key={skill.name}>{skill.name}</a>)}
         </div>
       </div>
       <button className='reveal-button' onClick={() => { setOpen(!open) }}>{open ? 'less ▲' : 'more ▼'}</button>
@@ -47,7 +47,7 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
         <div className='description-container'>
           <p className='project-description'>{project.description}</p>
           <div className='project-link-list'>
-          {project.links.map(link => <a className='project-link' href={link.url} key={link.name}>{link.name}</a>)}
+          {project.links.map(link => <a className='project-link' target="_blank" href={link.url} key={link.name}>{link.name}</a>)}
           </div>
         </div>
       }

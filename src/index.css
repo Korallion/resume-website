@@ -11,6 +11,7 @@
 
   .header {
     @apply text-center cursor-pointer m-2;
+    @apply hover:text-blue-600;
   }
 
   .header-title {
@@ -56,9 +57,8 @@
   }
 
   .reveal-button {
-    @apply bg-blue-800;
     @apply mb-1 mx-auto px-2 block;
-    @apply border-2 rounded-lg border-slate-600;
+    @apply hover:text-blue-600;
   }
 
   .description-container {

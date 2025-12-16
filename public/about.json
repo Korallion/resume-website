@@ -53,7 +53,7 @@
             ]
         },
         {
-            "name": "bookbot",
+            "name": "Bookbot",
             "startDate": "September 2024",
             "status": "complete",
             "description": "A simple boot.dev project to familiarize myself with python. Parses an input text to create a book report (which is just a few bits of metadata of the text).",
@@ -105,7 +105,7 @@
             ]
         },
         {
-            "name": "Static site generator",
+            "name": "SSG",
             "startDate": "November 2024",
             "status": "complete",
             "description": "A static site generator that converts markdown into html. A project from the boot.dev backend development course.",
