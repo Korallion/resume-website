@@ -33,7 +33,7 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
         <h2 className='project-title'>{project.name + ' - ' + project.startDate}</h2>
         <h2 className={'project-status ' + project.status}>{project.status}</h2>
         <div className='skill-list'>
-          {project.skills.map(skill => <a className="skill" target="_blank" href={skill.url} key={skill.name}>{skill.name}</a>)}
+          {project.skills.map(skill => <a className="skill" target="_blank" rel="noopener noreferrer" href={skill.url} key={skill.name}>{skill.name}</a>)}
         </div>
       </div>
       <button className='reveal-button' onClick={() => { setOpen(!open) }}>{open ? 'less ▲' : 'more ▼'}</button>
@@ -42,7 +42,7 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
       <div className='description-container' style={{ maxHeight: open ? 200 : 0}}>
           <p className='project-description'>{project.description}</p>
           <div className='project-link-list'>
-          {project.links.map(link => <a className='project-link' target="_blank" href={link.url} key={link.name}>{link.name}</a>)}
+          {project.links.map(link => <a className='project-link' target="_blank" rel="noopener noreferrer" href={link.url} key={link.name}>{link.name}</a>)}
           </div>
       </div>
     </div>
