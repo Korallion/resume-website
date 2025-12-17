@@ -7,7 +7,7 @@
         {
             "name": "Kinglifter Chronicles",
             "startDate": "May 2025",
-            "status": "in progress",
+            "status": "ongoing",
             "description": "A react native mobile application to record workouts and display trends in the users exercises.",
             "links": [
                 {
@@ -77,7 +77,7 @@
         {
             "name": "The One True Timer",
             "startDate": "May 2023",
-            "status": "on pause",
+            "status": "paused",
             "description": "An all-encompassing timer / stopwatch / clock app with interval timer capabailities ... beacause I was frustrated with the existing ones.",
             "links": [
                 {

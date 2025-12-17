@@ -31,7 +31,7 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
     <div className='project'>
       <div className='project-header'>
         <h2 className='project-title'>{project.name + ' - ' + project.startDate}</h2>
-        <h2 className={'project-status ' + (project.status === 'ongoing' ? 'ongoing' : 'complete')}>{project.status}</h2>
+        <h2 className={'project-status ' + project.status}>{project.status}</h2>
         <div className='skill-list'>
           {project.skills.map(skill => <a className="skill" target="_blank" href={skill.url} key={skill.name}>{skill.name}</a>)}
         </div>

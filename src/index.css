@@ -49,12 +49,16 @@
     @apply border-slate-500 border-2 rounded-lg;
   }
 
-  .ongoing {
+  .project-status.ongoing {
     @apply bg-indigo-900;
   }
 
-  .complete {
+  .project-status.complete {
     @apply bg-green-900;
+  }
+
+  .project-status.paused {
+    @apply bg-orange-700;
   }
 
   .reveal-button {
