@@ -15,11 +15,7 @@ const AboutMe: FunctionComponent<MeProps> = ({ me }) => {
       <h1 className='header-title'>{me.name}</h1>
       <h1 className='text-sm'>karl.jakelski@gmail.com</h1>
       <h1 className='header-subtitle'>and his works</h1>
-      {open &&
-        <div className='w-auto mx-auto'>
-          <p className='header-subtitle text-justify'>{me.about}</p>
-        </div>
-      }
+      <p className='header-subtitle header-about text-justify' style={{ maxHeight: open ? 200 : 0}}>{me.about}</p>
     </div>
   );
 }
@@ -43,14 +39,12 @@ const AboutProject: FunctionComponent<ProjectProps> = ({ project }) => {
       <button className='reveal-button' onClick={() => { setOpen(!open) }}>{open ? 'less ▲' : 'more ▼'}</button>
 
 
-      {open &&
-        <div className='description-container'>
+      <div className='description-container' style={{ maxHeight: open ? 200 : 0}}>
           <p className='project-description'>{project.description}</p>
           <div className='project-link-list'>
           {project.links.map(link => <a className='project-link' target="_blank" href={link.url} key={link.name}>{link.name}</a>)}
           </div>
-        </div>
-      }
+      </div>
     </div>
   )
 }

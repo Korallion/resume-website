@@ -18,10 +18,11 @@
     @apply mx-auto text-2xl ;
   }
 
-  .subtitle-container {
-    @apply hidden group-focus:block w-auto mx-auto;
+  .header-about {
+    @apply overflow-hidden;
+    @apply transition-all;
   }
-  
+
   .header-subtitle {
     @apply mx-auto px-4 whitespace-pre-line;
     @apply text-sm ;
@@ -32,7 +33,7 @@
     @apply transition-all;
     @apply block p-2 m-2 cursor-pointer;
     @apply border-slate-800	 border-2 rounded-lg;
-    @apply hover:border-blue-600 hover:scale-110;
+    @apply hover:border-blue-600 hover:scale-110 hover:my-4;
   }
 
   .project-header {
@@ -62,7 +63,7 @@
   }
 
   .description-container {
-    @apply block;
+    @apply block overflow-hidden transition-all;
   }
 
   .project-description {
